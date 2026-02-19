@@ -2,6 +2,7 @@ import Animal
 from Animal import Animal
 from Felino import Felino
 from zoo import Zoo
+from fabric import Fabrica
 
 #ob=Animal("Pantera")
 #ob1=Animal("Gato")
@@ -15,6 +16,18 @@ z1.addFelino(gato2)
 #print(z1.verGatos())
 for ob in z1.verGatos():
     print(ob.getEspecie())
+
+del z1
+print(type(gato1))
+
+zz=Fabrica("minitoy")
+zz.makeToy("puma")
+zz.makeToy("lince")
+zz.makeToy("jaguar")
+
+for peluche in zz.verCatalogo():
+    print(peluche.getEspecie())
+
 
 
 
